@@ -1,189 +1,95 @@
 input.onButtonPressed(Button.A, function () {
-    basic.showLeds(`
-        . . . # .
-        . . # # #
-        . . . # .
-        . . . # .
-        . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    0,
-    50
+    images.createImage(`
+        . . . . .
+        . . . . .
+        # # . # #
+        . . . . .
+        . . . . .
+        `).showImage(0, 0)
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "If [0|360] is jittery, insure battery at 75% power min."
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    0,
-    0
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "GeekServo-360-Degrees-2kg:360-degrees(not 180-degrees)"
+    )
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S7_ServoArm_Left"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S7_ServoArm_Left,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_000_Down,
+    quest_Debug_Show_Enum.Dashboard_OLED
+    )
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S6_ServoArm_Right"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S6_ServoArm_Right,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_000_Down,
+    quest_Debug_Show_Enum.Dashboard_OLED
     )
 })
 input.onButtonPressed(Button.AB, function () {
-    basic.showLeds(`
-        . # . # .
-        # # # # #
+    images.createImage(`
         . # . # .
         . # . # .
-        . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    50,
-    50
+        . . . . .
+        . . . . .
+        . . . . .
+        `).showImage(0, 0)
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "If [0|360] is jittery, insure battery at 75% power min."
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    0,
-    0
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "GeekServo-360-Degrees-2kg:360-degrees(not 180-degrees)"
+    )
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S7_ServoArm_Left"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S7_ServoArm_Left,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_090_Up_Full,
+    quest_Debug_Show_Enum.Dashboard_OLED
+    )
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S6_ServoArm_Right"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S6_ServoArm_Right,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_090_Up_Full,
+    quest_Debug_Show_Enum.Dashboard_OLED
     )
 })
 input.onButtonPressed(Button.B, function () {
-    basic.showLeds(`
-        . # . . .
-        # # # . .
-        . # . . .
-        . # . . .
+    images.createImage(`
+        # . . . #
         . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    50,
-    0
+        . . . . .
+        . . . . .
+        . . . . .
+        `).showImage(0, 0)
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "If [0|360] is jittery, insure battery at 75% power min."
     )
-    quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(1, quest_Time_Units_Enum.Seconds)
-    basic.showLeds(`
-        . . . . .
-        . . . . .
-        . . . . .
-        . . . . .
-        . # . # .
-        `)
-    quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_Func(
-    quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-    0,
-    0
+    quest_Note_1.quest_Show_String_For_Note_Small_Func(
+    "GeekServo-360-Degrees-2kg:360-degrees(not 180-degrees)"
     )
-})
-input.onLogoEvent(TouchButtonEvent.Pressed, function () {
-    if (true) {
-        basic.showLeds(`
-            # . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        50,
-        50,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        basic.showLeds(`
-            # # . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        -50,
-        -50,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        basic.showLeds(`
-            # # . . .
-            # . . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        50,
-        -50,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        basic.showLeds(`
-            # # . . .
-            # # . . .
-            . . . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_PowerMotorsViaBlueRedBlackPins_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        -50,
-        50,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        basic.showLeds(`
-            # # . . .
-            # # . . .
-            # . . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_Turn_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        quest_Turn_Type_Enum.Pivot,
-        quest_Turn_Direction_Enum.right,
-        quest_Turn_Power_Enum.Lo,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
-    if (true) {
-        basic.showLeds(`
-            # # . . .
-            # # . . .
-            # # . . .
-            . . . . .
-            . . . . .
-            `)
-        quest_Motors.quest_Set_Turn_WithTimer_Func(
-        quest_PortGroup_BlueRedBlack_PortIds_Enum.S1_MotorLeft__S0_MotorRight,
-        quest_Turn_Type_Enum.Pivot,
-        quest_Turn_Direction_Enum.left,
-        quest_Turn_Power_Enum.Lo,
-        quest_Turn_Duration_Enum.msec_3000,
-        quest_Debug_Show_Enum.Off
-        )
-        quest_Timer.quest_Set_ContinueCurrentState_CountdownTimer_Func(3, quest_Time_Units_Enum.Seconds)
-    }
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S7_ServoArm_Left"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S7_ServoArm_Left,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_045_Up_Half,
+    quest_Debug_Show_Enum.Dashboard_OLED
+    )
+    quest_Note_2.quest_Show_String_For_Note_Big_Func(
+    "Below Moddable: S6_ServoArm_Right"
+    )
+    quest_Motors.quest_Set_AutoDegrees_ForServoArm_BIG_Func(
+    quest_PortSingle_ServoArmBeam_PortId_Enum.S6_ServoArm_Right,
+    quest_ServoArm_DegreesInDirection_Enum.Degree_045_Up_Half,
+    quest_Debug_Show_Enum.Dashboard_OLED
+    )
 })
 quest_Note_1.quest_Show_String_For_Note_Small_Func(
 "2-Sequence Animation Validates New-Start"
