@@ -11,7 +11,7 @@
 # B. Code
 * Download Code to the Left
 
-# C. Test (Calibrate)
+# C. Integrate Build & Code (Test/Calibrate)
 * ![](https://github.com/quest-and-vcs-rnd/robot-Media-25-0305-2030/blob/main/r100-ServoArm-Test-IMG_3750--25-0305-2020--2xSpeed.gif?raw=true)
 * [Video WebLink for Above](https://share.descript.com/view/CpAl9AJu3Cl)
 
